@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Api</title>
+    <style>
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            margin: 10px;
+        }
+        h1{
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Search</h1><br><br>
+    </div>
+    <div class="container">
+
+        <form action="/weatherroute" method="post">
+        <label for:"city" > Enter Your City </label>
+        <input type="text" id="city" name="city">
+
+        <label for:"unit" > Enter Units </label>
+        <input type="text" id="unit" name="unit">
+
+        <label for:"appid" > Enter Your Api KeY </label>
+        <input type="text" id="appid" name="appid">
+
+        <input type="submit" value="search">
+    </form>
+
+
+
+
+    </div>
+</body>
+</html>
