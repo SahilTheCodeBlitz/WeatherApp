@@ -22,7 +22,7 @@ def fetchdata():
 
     data = datas.json() 
 
-    return f'city  = {city}  , unit  = {unit} , appid  = {appid} \n\n {data}'
+    return f'city  = {city}  , unit  = {unit} , appid  = {appid}  {data}'
 
 if __name__ == "__main__" :
     app.run(host="0.0.0.0")
