@@ -20,9 +20,11 @@ def fetchdata():
 
     datas = requests.get(url,params=params)
 
-    data = datas.json() 
+    data = datas.json()
 
-    return f'city  = {city}  , unit  = {unit} , appid  = {appid}  {data}'
+    cityname = data['name'] 
+
+    return f'city  = {city}  , unit  = {unit} , appid  = {appid}  {data} city = {cityname}'
 
 if __name__ == "__main__" :
     app.run(host="0.0.0.0")
